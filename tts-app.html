@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicativo TTS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conversor de Texto para Voz</h1>
+    
+    <textarea id="texto" rows="5" cols="50" placeholder="Digite seu texto aqui..."></textarea>
+    <br>
+    <button onclick="lerTexto()">Ouvir</button>
+    <button onclick="pararLeitura()">Parar</button>
+
+    <script>
+        function lerTexto() {
+            const texto = document.getElementById('texto').value;
+            const utterance = new SpeechSynthesisUtterance(texto);
+            utterance.lang = 'pt-BR'; // Define o idioma
+            window.speechSynthesis.speak(utterance);
+        }
+
+        function pararLeitura() {
+            window.speechSynthesis.cancel();
+        }
+    </script>
+</body>
+</html>
