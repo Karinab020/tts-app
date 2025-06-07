@@ -10,7 +10,7 @@ Um projeto web que converte texto em voz usando a API Web Speech ou integração
 ## 🌐 Acesso ao Site
 
 **Link do GitHub Pages:**  
-[https://karinab020.github.io/tts-app/](https://karinab020.github.io/tts-app/)
+[https://Karinab020.github.io/tts-app/](https://Karinab020.github.io/tts-app/)
 
 *(Substitua `karinab020` pelo seu nome de usuário do GitHub)*
 
